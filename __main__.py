@@ -5,26 +5,26 @@ import AvlTree
 import random
 
 if __name__ == "__main__":
-	nodes = input("Quanti nodi deve contenere l'albero AVL? ")
+	nodes = input("How many nodes will the tree contain? ")
 	nodes = int(nodes)
 
 	print
 
 	#
-	# Costruisci un albero AVL vuoto.
-	#
+	# Build an empty tree.
+    #
 	tree = AvlTree.Tree()
 	random.seed()
 
 	for i in range(nodes):
 		#
-		# Inserisci l'indice attuale come nuovo nodo dell'albero.
+		# Insert the current index as a new node.
 		#
 		n = random.randint(0, (nodes ** 2))
 		tree.insert(n)
 
 		#
-		# Stampa a schermo una rappresentazione dell'albero.
+		# Print a representation of the tree.
 		#
 		index = "%d" % (i)
 
